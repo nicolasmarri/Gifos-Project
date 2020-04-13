@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GifOS</title>
+    <link rel="stylesheet" href="./css/upload.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" ></script>
+    <script src="./js/upload.js"></script>
+</head>
+<body>
+    <header class="header">
+        ¡Bienvenidos/as a Guifos.com! ------Donde los gifs estan.//////
+    </header>
+    <nav class="nav-bar-container">
+        <div class="arrow-index">
+            <a href="./index.html"><img src="./images/arrow.svg" alt="Volver"></a>
+            <img src="./images/gifOF_logo.png" alt="Logo">
+        </div>
+    </nav>
+    <main>
+        <section class="window-create-gifos" id="windowCreateGifos">
+            <div class="window-title-gifos">
+                <h4>Crear Gifos</h4>
+            </div>
+            <div class="window-text-gifos">
+                <div class="window-icon">
+                    <img src="./images/windowimg.png" alt="Ventana Windows">
+                </div>
+                <div class="window-container-text">
+                    <div class="window-subtitle">
+                        Aqui podras crear tus propios Gifos
+                    </div>
+                    <div class="window-steps-gif">
+                        Crear tu <span>Gifo</span> es muy facil, graba cualquier imagen con tu camara y obtén Gifos <br>
+                        personalizados. Los pasos para crear tu Gifo son : <br> <br>
+                        <span>1)</span> Dar permisos de acceso a la camara (solo por el tiempo de uso) <br> <br>
+                        <span>2)</span> Capturar tu momento Gifo <br> <br>
+                        <span>3)</span> Revisar el momento <br> <br>
+                        <span>4)</span> Listo para subir y compartir! <br> <br>
+                        ¿Quieres comenzar a crear tu <span>Gifo</span> ahora? <br><br>
+                    </div>
+                    <div class="window-buttons">
+                        <!-- <button class="window-button-cancel"> -->
+                            <a class="window-button-cancel" href="./index.html">Cancelar</a>
+                        <!-- </button> -->
+                        <button class="window-button-start" id="comenzarVideo">
+                            Comenzar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="window-check-camera" id="windowCheck">
+            <div class="window-title-check">
+                <h4 id="titleWindow">Un chequeo antes de empezar</h4>
+                <img src="./images/button3.svg" alt="">
+            </div>
+            <div class="window-video-camera" id="videoCamera">
+                <video id="video-camara"></video>
+                <img src="./images/globe_img.png" alt="logo de carga" id="logoSubir">
+                <h3 class="subiendo-guifo" id="subirGuifo"> Estamos subiendo tu Guifo...</h3>
+            </div>
+            <div class="window-guifo-ready" id="windowGuifoReady">
+                <div class="container-window-guifo-ready" id="containerGuifoReady">
+                    <h4 class="title-guifo-creado" id="previewGuifo">Guifo creado con exito</h4>
+                    <button class="button-copy-guifo" id="btnCopyGuifo">
+                        Copiar enlace Guifo
+                    </button>
+                    <button id="btnDownloadGuifo">
+                        Descargar Guifo
+                    </button>
+                </div>
+            </div>
+            <div class="window-video-buttons" id="windowBtnStar">
+                <img src="./images/camera.svg" alt="">
+                <button class="window-button-start" id="btnCapture">
+                    Capturar
+                </button>
+            </div>
+            <div class="window-video-end" id="windowBtnEnd">
+                <img src="./images/recording.svg" alt="" id="logoCam">
+                <button class="window-button-end" id="btnEnd">
+                    Listo
+                </button>
+                <button class="window-button-repeat" id="btnRepeat">
+                    Repetir Captura
+                </button>
+                <button class="window-button-upload" id="btnUpload">
+                    Subir Guifo
+                </button>
+                <button class="window-button-cancel" id="cancelBtn">
+                    Cancelar
+                </button>
+                <button class="window-button-ok" id="btnListo">
+                    Listo
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

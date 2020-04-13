@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GifOS</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+        rel="stylesheet">
+    <script src="./js/api.js"></script>
+    <script src="./js/index-header.js"></script>
+    <script src="./js/index-body.js"></script>
+</head>
+
+<body class="body" id="bodyStyle">
+    <header class="header">
+        ¡Bienvenidos/as a Guifos.com! ------Donde los gifs estan.//////
+    </header>
+    <nav class="nav-bar-container">
+        <img src="./images/gifOF_logo.png" alt="Logo" id="darkLogo">
+        <ul class="nav-bar">
+            <li>
+                    <a class="button-crear" id="blackBtnCrear" href="./upload.html"><span class="style-button-crear" id="blackBtnStyleCrear">
+                            Crear Gifos
+                        </span>
+                    </a>
+                
+            </li>
+            <li>
+                <div class="container-elegir">
+                    <div>
+                        <button class="button-elegir" id="buttonTheme">
+                            <span class="style-button-elegir" id="styleBtnElegir">
+                                Elegir tema
+                            </span>
+                        </button>
+                        <button class="button-drop" id="buttonThemeDrop">
+                            <img src="./images/dropdown.svg" alt="Desplegar" class="style-button-drop">
+                        </button>
+                    </div>
+                    <div class="container-option" id="optionTheme">
+                        <button class="option-day" id="optionDay">
+                            <span>S</span>ailor Day
+                        </button>
+                        <button class="option-night" id="optionBlack">
+                            <span>S</span>ailor Night
+                        </button>
+                    </div>
+                </div>
+
+            </li>
+            <li class="container-gifos" id="BtnGifos">
+                <a href="./gifos.html"><span>M</span>is Gifos</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="body-container">
+        <div class="container-search" id="dayContainerSearch">
+            <div class="search" id="daySearch">
+                Buscar
+            </div>
+            <div class="input-container">
+                <input class="input-search" type="text" id="inputSearch"
+                    placeholder="Busca gifs, hashtags, temas, busca lo que quieras...">
+                <button class="button-search" id="btnSearch">
+                    <img src="./images/lupa_inactive.svg" alt="Buscador" id="lupa">
+                    Buscar
+                </button>
+            </div>
+        </div>
+        <div class="container-opciones" id="containerOpciones">
+            <div class="opciones" id="btnOpciones">
+                <button id="animalOps">Animales</button>
+                <button id="deporteOps">Deportes</button>
+                <button id="comidaOps">Comidas</button>
+            </div>
+        </div>
+        <div class="container-sugerencias">
+            <h4 class="title-sugerencias">Hoy te sugerimos</h4>
+            <div class="container-4-sugerencias">
+                <div class="sugerencias">
+                    <div class="sugerencias-title" id="sugerencias"> #Nature
+                        <button class="sugerencias-close"><img src="./images/button3.svg" alt="button close"></button>
+                    </div>
+                    <div class="sugerencias-gif" id="sugerenciaNature">
+                        <p id="parrafoNature"><a href="https://giphy.com/gifs/forest-sky-AIGF7ljcNKZI4"></a></p>
+                        <button class="button-ver-sugerencias" id="btnNature"><span>Ver mas...</span></button>
+                    </div>
+                </div>
+                <div class="sugerencias">
+                    <div class="sugerencias-title"> #Football
+                        <button class="sugerencias-close"><img src="./images/button3.svg" alt="button close"></button>
+                    </div>
+                    <div class="sugerencias-gif" id="sugerenciaFootball">
+                        <p id="parrafoFootball"><a href="https://giphy.com/gifs/football-fail-soccer-f2otJkmMUDPa0"></a>
+                        </p>
+                        <button class="button-ver-sugerencias" id="btnFootball"><span>Ver mas...</span></button>
+                    </div>
+                </div>
+                <div class="sugerencias">
+                    <div class="sugerencias-title"> #Mountain
+                        <button class="sugerencias-close"><img src="./images/button3.svg" alt="button close"></button>
+                    </div>
+                    <div class="sugerencias-gif" id="sugerenciaMountain">
+                        <p id="parrafoMountain"><a
+                                href="https://giphy.com/gifs/loop-snowboarding-ridge-mI3J3e2v97T8Y"></a></p>
+                        <button class="button-ver-sugerencias" id="btnMountain"><span>Ver mas...</span></button>
+                    </div>
+                </div>
+                <div class="sugerencias">
+                    <div class="sugerencias-title"> #Computer
+                        <button class="sugerencias-close"><img src="./images/button3.svg" alt="button close"></button>
+                    </div>
+                    <div class="sugerencias-gif" id="sugerenciaComputer">
+                        <p id="parrafoComputer"><a href="https://giphy.com/gifs/5Zesu5VPNGJlm"></a></p>
+                        <button class="button-ver-sugerencias" id="btnComputer"><span>Ver mas...</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-tendencias" id="tendencias">
+            <h4 class="title-tendencias" id="titleTend">Tendencias</h4>
+            <br><br><br>
+            <div class="container-gifs-api" id="containerGifs">
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
